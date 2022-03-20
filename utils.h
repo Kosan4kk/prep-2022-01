@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-//добавляем все нужные библиотеки
+// добавляем все нужные библиотеки
 
-#ifndef UTILS_H
-#define UTILS_H
+#ifndef PROJECT_INCLUDE_UTILS_H_
+#define PROJECT_INCLUDE_UTILS_H_
 
 
 // TODO: Implement `power of` function
@@ -15,4 +15,4 @@ int isPrime(int n);
 void Factorial(int x);
 size_t timer_from(unsigned char from);
 
-#endif //UTILS_H
+#endif // PROJECT_INCLUDE_UTILS_H_
