@@ -38,8 +38,7 @@ int main(int argc, const char** argv) {
                 int to = atoi(data);
                 size_t ticks_count = timer_from(to);
                 printf("%zu\n", ticks_count);
-           }
-            else {
+            } else {
                 return ERR_ARGS_COUNT;
             }
             break;
@@ -48,21 +47,19 @@ int main(int argc, const char** argv) {
             if (argc == 4) {
                 int base = atoi(data);
                 int power = atoi(argv[3]);
-                int res = custom_pow(base, power);    // TODO: Implement me
+                int res = custom_pow(base, power);    // TODO(Kosan4kk): Implement me
                 printf("%i\n", res);
-                
             } else {
                 return ERR_ARGS_COUNT;
             }
             break;
         }
         case TST_MOD_IMPL: {
-            if (argc == 3){
+            if (argc == 3) {
             int num = atoi(data);
             int res = isPrime(num);
             printf("%i\n", res);
-            }
-            else {
+            } else {
                 return ERR_ARGS_COUNT;
             }
             break;
@@ -71,8 +68,7 @@ int main(int argc, const char** argv) {
             if (argc == 3) {
             int num = atoi(data);
             Factorial(num);
-            }
-            else {
+            } else {
                 return ERR_ARGS_COUNT;
             }
             break;
