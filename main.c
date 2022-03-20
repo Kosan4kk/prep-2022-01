@@ -35,9 +35,14 @@ int main(int argc, const char** argv) {
 
     switch (Test_case) {
         case TST_FOO_FIX: {
-            int to = atoi(data);
-            size_t ticks_count = timer_from(to);
-            printf("%ld\n", ticks_count);
+            if (argc == 3) {
+                int to = atoi(data);
+                size_t ticks_count = timer_from(to);
+                printf("%ld\n", ticks_count);
+            }
+            else{
+                return ERR_ARGS_COUNT;
+            }
             break;
         }
         case TST_FOO_IMPL: {
@@ -53,14 +58,24 @@ int main(int argc, const char** argv) {
             break;
         }
         case TST_MOD_IMPL: {
+            if (argc == 3){
             int num = atoi(data);
             int res = isPrime(num);
             printf("%i\n", res);
+            }
+            else{
+                return ERR_ARGS_COUNT;
+            }
             break;
         }
         case TST_MMM_TRY: {
+            if (argc == 3){
             int num = atoi(data);
             Factorial(num);
+            }
+            else{
+                return ERR_ARGS_COUNT;
+            }
             break;
         }
         default: {

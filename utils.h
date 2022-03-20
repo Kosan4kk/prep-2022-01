@@ -12,7 +12,7 @@
 // проинициализировать функции
 int custom_pow(int base, int power);
 int isPrime(int n);
-void F(int x);
+void Factorial(int x);
 size_t timer_from(unsigned char from);
 
 #endif //UTILS_H
