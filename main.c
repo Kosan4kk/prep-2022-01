@@ -38,7 +38,7 @@ int main(int argc, const char** argv) {
             if (argc == 3) {
                 int to = atoi(data);
                 size_t ticks_count = timer_from(to);
-                printf("%ld\n", ticks_count);
+                printf("%zu\n", ticks_count);
             }
             else{
                 return ERR_ARGS_COUNT;
