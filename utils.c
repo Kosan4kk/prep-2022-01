@@ -14,7 +14,7 @@ size_t timer_from(unsigned char from) {
 
 
 
-int custom_pow(int base, int power) {  // возвращает результат возведения base в степень pow
+int custom_power(int base, int power) {  // возвращает результат возведения base в степень pow
     int a = 0;
     a = pow(base, power);
     return a;
