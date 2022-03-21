@@ -11,10 +11,11 @@ size_t timer_from(int from) {
         {
             ++counter;
             printf("%d ", i);
-            --i;
-        } while (i >= 0);
+            i--;
+        } while (i >= 1);
+        ++counter;
+        printf("%d\n", i);
     }
-    printf("\n");
     return counter;
 }
 
