@@ -11,10 +11,21 @@ size_t timer_from(unsigned char from) {
 
 
 
-int custom_power(int base, int power) {  // возвращает результат возведения base в степень pow
+/*int custom_power(int base, int power) {  // возвращает результат возведения base в степень pow
     int a = 0;
     a = pow(base, power);
     return a;
+}*/
+int custom_power(int base, int power)
+{
+    int result;
+    int i;
+    result =1;
+    for (i=1, i<=power;i++)
+    {
+        result = result*base;
+    }
+    return result;
 }
 
 int isPrime(int n) {  // является ли число, поданное на вход, простым
