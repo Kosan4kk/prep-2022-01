@@ -14,6 +14,7 @@ size_t timer_from(int from) {
             --i;
         } while (i >= 0);
     }
+    printf("\n");
     return counter;
 }
 
