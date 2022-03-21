@@ -3,12 +3,10 @@
 size_t timer_from(int from) {
     size_t counter = 0;
     int i = from;
-    if (i <= 0){
+    if (i <= 0) {
         return 0;
-    }
-    else {
-        do
-        {
+    } else {
+        do {
             ++counter;
             printf("%d ", i);
             i--;
@@ -53,8 +51,7 @@ void Factorial(int x) {  // выводит через пробел все цел
     if (x > 1) {
         Factorial(x-1);
         printf(" ");
-    }
-    else if (x < 1){
+    } else if (x < 1) {
         Factorial(x+1);
         printf(" ");
     }
