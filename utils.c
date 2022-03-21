@@ -54,5 +54,9 @@ void Factorial(int x) {  // выводит через пробел все цел
         Factorial(x-1);
         printf(" ");
     }
+    else if (x < 1){
+        Factorial(x+1);
+        printf(" ");
+    }
     printf("%d", x);
 }
