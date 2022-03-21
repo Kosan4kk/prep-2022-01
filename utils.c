@@ -3,11 +3,11 @@
 #include "utils.h"
 #endif
 
-// проинициализировать функции
+/*// проинициализировать функции
 int custom_power(int base, int power);
 int isPrime(int n);
 void Factorial(int x);
-size_t timer_from(unsigned char from);
+size_t timer_from(unsigned char from);*/
 
 size_t timer_from(unsigned char from) {
     size_t counter = 0;
