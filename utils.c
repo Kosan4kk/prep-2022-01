@@ -2,10 +2,13 @@
 
 size_t timer_from(unsigned char from) {
     size_t counter = 0;
-    for (unsigned char i = from; i > 0; --i) {
-        ++counter;
-        printf("%d\n", i);
+    for (unsigned char i = from; i > 0; i--) {
+        counter++;
+        printf("%d ", i);
     }
+    printf("0");
+    counter++;
+    printf("\n");
     return counter;
 }
 
