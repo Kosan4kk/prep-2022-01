@@ -21,8 +21,7 @@ int custom_power(int base, int power)
     int result;
     int i;
     result =1;
-    for (i=1, i<=power;i++)
-    {
+    for (i = 1; i <= power; i++) {
         result = result*base;
     }
     return result;
