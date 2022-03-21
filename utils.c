@@ -2,16 +2,20 @@
 
 size_t timer_from(int from) {
     size_t counter = 0;
-    for (int i = from; i > 0; i--) {
-        counter++;
-        printf("%d ", i);
+    int i = from;
+    if (i == 0){
+        return 0;
     }
-    printf("0");
-    counter++;
-    printf("\n");
+    else {
+        do
+        {
+            ++counter;
+            printf("%d ", i);
+            --i;
+        } while (i >= 0);
+    }
     return counter;
 }
-
 
 
 /*int custom_power(int base, int power) {  // возвращает результат возведения base в степень pow
