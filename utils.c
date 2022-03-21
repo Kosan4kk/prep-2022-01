@@ -52,6 +52,7 @@ int isPrime(int n) {  // является ли число, поданное на
 void Factorial(int x) {  // выводит через пробел все целые числа от 1 до n
     if (x > 1) {
         Factorial(x-1);
+        printf(" ");
     }
-    printf("%d ", x);
+    printf("%d", x);
 }
