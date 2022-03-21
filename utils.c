@@ -1,3 +1,9 @@
+#include <stddef.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+// добавляем все нужные библиотеки
+
 #ifndef UTILS_H
 #define UTILS_H
 #include "utils.h"
