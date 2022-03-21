@@ -1,4 +1,9 @@
 #include "utils.c"
+#ifndef UTILS_H
+#define UTILS_H
+#include "utils.h"
+#endif
+
 #define ERR_ARGS_COUNT (-1)
 #define ERR_WRONG_FLG (-2)
 
