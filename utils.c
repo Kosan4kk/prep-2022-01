@@ -1,5 +1,3 @@
-#ifndef UTILS_H
-#define UTILS_H
 #include "utils.h"
 
 size_t timer_from(unsigned char from) {
@@ -38,4 +36,3 @@ void Factorial(int x) {  // выводит через пробел все цел
     }
     printf("%d ", x);
 }
-#endif
