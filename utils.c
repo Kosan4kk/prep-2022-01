@@ -23,11 +23,10 @@ size_t timer_from(int from) {
     a = pow(base, power);
     return a;
 }*/
-int custom_power(int base, int power)
-{
+int custom_power(int base, int power) {
     int result;
     int i;
-    result =1;
+    result = 1;
     for (i = 1; i <= power; i++) {
         result = result*base;
     }
