@@ -3,7 +3,7 @@
 size_t timer_from(int from) {
     size_t counter = 0;
     int i = from;
-    if (i == 0){
+    if (i <= 0){
         return 0;
     }
     else {
